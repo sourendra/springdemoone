@@ -8,6 +8,9 @@ public class TrackCoach implements Coach {
 		this.fortuneService = fortuneService;
 	}
 
+	public TrackCoach() {
+	}
+
 	@Override
 	public String getDailyWork() {
 		// TODO Auto-generated method stub
@@ -16,7 +19,7 @@ public class TrackCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		return fortuneService.getFortune();
+		return "Just Do It! "+fortuneService.getFortune();
 	}
 
 }
